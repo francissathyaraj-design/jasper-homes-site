@@ -145,11 +145,12 @@
         </div>
     </section>
 
-    <section class="py-16 bg-slate-50" id="enquire">
-    <div class="max-w-3xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-8">Enquire Now</h2>
+    <section class="bg-white py-20 px-6" id="enquire">
+    <div class="max-w-4xl mx-auto bg-blue-700 text-white p-12 rounded-[40px] shadow-2xl relative overflow-hidden">
+		<div class="relative z-10">
+        <h2 class="text-3xl font-bold mb-4 text-center">Enquire Now</h2>
         
-        <form action="https://api.web3forms.com/submit" method="POST" class="bg-white p-8 rounded-2xl shadow-lg">
+        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4 max-w-lg mx-auto">
             <input type="hidden" name="access_key" value="1d96b6e1-0909-4066-b2e2-343e861588bc">
             
             <input type="hidden" name="subject" value="New Lead from Jasper Homes Website">
@@ -159,11 +160,11 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
                     <label class="block text-sm font-semibold mb-2">Name</label>
-                    <input type="text" name="name" required class="w-full p-3 border rounded-lg" placeholder="Enter your name">
+                    <input type="text" name="name" required class="p-4 rounded-xl bg-blue-800 border border-blue-600 placeholder-blue-300 w-full" placeholder="Enter your name">
                 </div>
                 <div>
                     <label class="block text-sm font-semibold mb-2">Mobile Number</label>
-                    <input type="tel" name="phone" required class="w-full p-3 border rounded-lg" placeholder="Enter mobile number">
+                    <input type="tel" name="phone" required class="p-4 rounded-xl bg-blue-800 border border-blue-600 placeholder-blue-300 w-full" placeholder="Enter mobile number">
                 </div>
             </div>
 
@@ -179,18 +180,21 @@
 
             <div class="mb-6">
                 <label class="block text-sm font-semibold mb-2">Requirement Details</label>
-                <textarea name="requirements" rows="4" class="w-full p-3 border rounded-lg" placeholder="E.g. Looking for East facing plot, 1200 sqft..."></textarea>
+                <textarea name="requirements" rows="4" class="p-4 rounded-xl bg-blue-800 border border-blue-600 placeholder-blue-300 w-full" placeholder="E.g. Looking for East facing plot, 1200 sqft..."></textarea>
             </div>
 
-            <button type="submit" class="w-full bg-blue-700 text-white font-bold py-4 rounded-lg hover:bg-blue-800 transition shadow-md">
+            <button type="submit" class="w-full bg-white text-blue-700 py-4 rounded-xl font-black text-lg hover:bg-slate-100 transition shadow-lg">
                 SUBMIT ENQUIRY
             </button>
         </form>
+		<input type="hidden" name="redirect" value="https://jasperhomes.in/success.html">
     </div>
+	</div>
 </section>
 
 </body>
 
 </html>
+
 
 
