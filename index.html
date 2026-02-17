@@ -169,13 +169,16 @@
             </div>
 
             <div class="mb-6">
-                <label class="block text-sm font-semibold mb-2">Project of Interest</label>
-                <select name="project" class="block text-sm font-semibold mb-2">
-                    <option value="Arasankalani" class="block text-sm font-semibold mb-2">Arasankalani (11 Plots)</option>
-                    <option value="Pudhupakkam" class="block text-sm font-semibold mb-2">Pudhupakkam (16 Plots)</option>
-                    <option value="Koovathur" class="block text-sm font-semibold mb-2">Koovathur (40 Plots)</option>
+                <label class="block text-white text-sm font-semibold mb-2">Project of Interest</label>
+				<div class="relative">
+                <select name="project" required class="w-full p-4 bg-white border border-slate-300 rounded-xl text-slate-900 font-medium focus:ring-2 focus:ring-yellow-500 appearance-none cursor-pointer">
+                    <option value="" disabled selected class="text-slate-400">Select a project</option>
+					<option value="Arasankalani" class="text-slate-900 bg-white py-2">Arasankalani (11 Plots)</option>
+                    <option value="Pudhupakkam" class="text-slate-900 bg-white py-2">Pudhupakkam (16 Plots)</option>
+                    <option value="Koovathur" class="text-slate-900 bg-white py-2">Koovathur (40 Plots)</option>
                     <option value="General" class="block text-sm font-semibold mb-2">General Enquiry</option>
                 </select>
+				</div>
             </div>
 
             <div class="mb-6">
@@ -195,6 +198,7 @@
 </body>
 
 </html>
+
 
 
 
