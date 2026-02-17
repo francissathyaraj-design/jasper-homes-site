@@ -145,23 +145,51 @@
         </div>
     </section>
 
-    <section id="enquire" class="bg-white py-20 px-6">
-        <div class="max-w-4xl mx-auto bg-blue-700 text-white p-12 rounded-[40px] shadow-2xl relative overflow-hidden">
-            <div class="relative z-10">
-                <h2 class="text-3xl font-bold mb-4 text-center">Looking for Land in a Different Area?</h2>
-                <p class="mb-10 text-blue-100 text-center">Let us know & we will aggregate for you. Tell us your requirements.</p>
-                <form class="space-y-4 max-w-lg mx-auto">
-                    <div class="grid grid-cols-2 gap-4">
-                        <input type="text" placeholder="Your Name" class="p-4 rounded-xl bg-blue-800 border border-blue-600 placeholder-blue-300 w-full">
-                        <input type="text" placeholder="Mobile" class="p-4 rounded-xl bg-blue-800 border border-blue-600 placeholder-blue-300 w-full">
-                    </div>
-                    <input type="text" placeholder="Area & Requirements" class="p-4 rounded-xl bg-blue-800 border border-blue-600 placeholder-blue-300 w-full">
-                    <button class="w-full bg-white text-blue-700 py-4 rounded-xl font-black text-lg hover:bg-slate-100 transition shadow-lg">Submit Request</button>
-                </form>
+    <section class="py-16 bg-slate-50" id="enquire">
+    <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Enquire Now</h2>
+        
+        <form action="https://api.web3forms.com/submit" method="POST" class="bg-white p-8 rounded-2xl shadow-lg">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            
+            <input type="hidden" name="subject" value="New Lead from Jasper Homes Website">
+            
+            <input type="hidden" name="redirect" value="https://jasperhomes.in/success.html">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Name</label>
+                    <input type="text" name="name" required class="w-full p-3 border rounded-lg" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Mobile Number</label>
+                    <input type="tel" name="phone" required class="w-full p-3 border rounded-lg" placeholder="Enter mobile number">
+                </div>
             </div>
-        </div>
-    </section>
+
+            <div class="mb-6">
+                <label class="block text-sm font-semibold mb-2">Project of Interest</label>
+                <select name="project" class="w-full p-3 border rounded-lg">
+                    <option value="Ponmar">Ponmar (14 Plots)</option>
+                    <option value="Pudhupakkam">Pudhupakkam (16 Plots)</option>
+                    <option value="Vengadamangalam">Vengadamangalam (19 Plots)</option>
+                    <option value="General">General Enquiry</option>
+                </select>
+            </div>
+
+            <div class="mb-6">
+                <label class="block text-sm font-semibold mb-2">Requirement Details</label>
+                <textarea name="requirements" rows="4" class="w-full p-3 border rounded-lg" placeholder="E.g. Looking for East facing plot, 1200 sqft..."></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-blue-700 text-white font-bold py-4 rounded-lg hover:bg-blue-800 transition shadow-md">
+                SUBMIT ENQUIRY
+            </button>
+        </form>
+    </div>
+</section>
 
 </body>
 
 </html>
+
